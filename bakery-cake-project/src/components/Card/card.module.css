@@ -1,0 +1,75 @@
+.oferta {
+    margin: 20px auto;
+    padding-bottom: 20px;
+    background-color: #F2A6A6;
+    width: 95%;
+
+}
+
+
+.card {
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 330px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+    background-color: white;
+
+}
+
+img {
+    max-width: 291px;
+    max-height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+
+.headingsStyleOutContainer {
+    font-family: 'Grand Hotel';
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.headingsStyleInContainer {
+    font-family: 'Grand Hotel';
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+
+}
+
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FEDD03;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+  
+}
