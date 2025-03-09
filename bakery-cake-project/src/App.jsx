@@ -13,10 +13,35 @@ function App() {
         <div className="col-span-12">
           <Presentation />
         </div>
-        <div className="col-span-12">
-          <Card />
-          <Card />
-        </div>
+        <section className={`col-span-12 offerSection`}>
+          <h2>Conoce nuestra oferta</h2>
+          <div className={`col-span-12 cardSectionContainer`}>
+            <h3>Lo más popular</h3>
+            <div className={`cardSection`}>
+              <Card
+                imgCard="../src/assets/cake-card-img.jpg"
+                title="Bizcocho 1 libra"
+                description="Dulce y esponjoso lorem ipsum, con un toque de vainilla y notas de
+            felicidad. Cada bocado derretirá tu paladar con capas de suavidad y
+            sabor inigualable. 1 libra"
+              />
+              <Card
+                imgCard="../src/assets/presentation-wall-4.jpg"
+                title="Bizcocho 1/2 libra"
+                description="lorem ipsum, con un toque de vainilla y notas de
+            felicidad. Cada bocado derretirá tu paladar con capas de suavidad y
+            sabor inigualable. 1/2 libra"
+              />
+              <Card
+                imgCard="../src/assets/presentation-wall-5.jpg"
+                title="Bizcocho 2 libra"
+                description="2 libras lorem ipsum, con un toque de vainilla y notas de
+            felicidad. Cada bocado derretirá tu paladar con capas de suavidad y
+            sabor inigualable."
+              />
+            </div>
+          </div>
+        </section>
       </div>
     </>
   );
