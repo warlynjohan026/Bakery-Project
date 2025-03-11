@@ -1,7 +1,7 @@
+import styles from "./gallery.module.css";
+import galleryData from "./gallery-data";
 import { useEffect, useState } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import galleryData from "./gallery-data";
-import styles from "./gallery.module.css";
 
 function Gallery() {
   const [data, setData] = useState(galleryData);
@@ -9,13 +9,14 @@ function Gallery() {
 
   const collection = [...new Set(galleryData.map((item) => item.title))];
 
-  const gallery_filter = (itemData) => {
-    setData(
-      itemData ? galleryData.filter((item) => item.title === itemData)
-      : galleryData
-    );
-    setActiveFilter(itemData);
-  };
+   const gallery_filter = (itemData) => {
+     setData(
+       itemData
+         ? galleryData.filter((item) => item.title === itemData)
+         : galleryData
+     );
+     setActiveFilter(itemData);
+   };
 
   return (
     <div className={styles.galleryWrapper}>
@@ -23,7 +24,10 @@ function Gallery() {
         <ul>
           <li>
             <button
-              onClick={() => gallery_filter("")}
+              onClick={() => {
+                setData(galleryData);
+                setActiveFilter(""); // Reset active filter to "Todo"
+              }}
               className={activeFilter === "" ? styles.active : ""}
             >
               Todo
@@ -42,7 +46,7 @@ function Gallery() {
         </ul>
       </div>
 
-      <div className={styles.galleryContainer}>
+      <div className={`${styles.galleryContainer}`}>
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
           gutterBreakpoints={{ 350: "12px", 750: "16px", 900: "24px" }}
@@ -53,9 +57,7 @@ function Gallery() {
                 key={index}
                 src={item.srcImg}
                 alt={item.altImg}
-                className={`${styles.galleryItem} ${
-                  isTransitioning ? styles.hidden : ""
-                }`}
+                style={{ width: "100%", display: "block" }}
               />
             ))}
           </Masonry>
