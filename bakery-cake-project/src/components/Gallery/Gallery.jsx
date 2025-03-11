@@ -2,10 +2,12 @@ import styles from "./gallery.module.css";
 import galleryData from "./gallery-data";
 import { useEffect, useState } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import PopUpCard from "../PopUp/PopUpCard";
 
 function Gallery() {
   const [data, setData] = useState(galleryData);
   const [activeFilter, setActiveFilter] = useState("");
+  const [seletectImg, setSelectedImg] = useState(null)
 
   const collection = [...new Set(galleryData.map((item) => item.title))];
 
@@ -17,6 +19,16 @@ function Gallery() {
      );
      setActiveFilter(itemData);
    };
+  
+  
+  const handlePopUp = (item) => {
+    setSelectedImg(item)
+
+  }
+
+  const closePopUp = () => {
+    setSelectedImg(null); // Hide popup
+  };
 
   return (
     <div className={styles.galleryWrapper}>
@@ -54,6 +66,7 @@ function Gallery() {
           <Masonry>
             {data.map((item, index) => (
               <img
+                onClick={() => handlePopUp(item)}
                 key={index}
                 src={item.srcImg}
                 alt={item.altImg}
@@ -63,6 +76,17 @@ function Gallery() {
           </Masonry>
         </ResponsiveMasonry>
       </div>
+      {/* Show PopUpCard if an image is selected */}
+
+      {seletectImg && (
+        <div className={styles.popUpOverlay} onClick={closePopUp}>
+          <PopUpCard
+            title={seletectImg.title}
+            description={seletectImg.descrip}
+            img={seletectImg.srcImg}
+          />
+        </div>
+      )}
     </div>
   );
 }

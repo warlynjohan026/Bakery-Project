@@ -1,0 +1,13 @@
+.carrouselContainer {
+    width: 45%;
+
+}
+
+
+@media (max-width: 480px) {
+  .carrouselContainer {
+    width: 80%;
+
+
+  }
+}

@@ -1,4 +1,6 @@
 @import "tailwindcss";
+
+
 * {
   margin: 0;
   padding: 0;
@@ -65,6 +67,35 @@ body {
   font-family: "Grand Hotel";
   font-size: 3rem;
   text-align: center;
+}
+
+
+
+.conocerSection {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  margin: 25px 75px 75px 75px;
+  border-radius: 20px;
+
+}
+
+.conocerSection h2 {
+  font-family: "Grand Hotel";
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 40px;
+}
+
+
+
+.CarrouselSection {
+  background-color: goldenrod;
+  height: 1200px;
+  margin-top: 10%;
 }
 
 

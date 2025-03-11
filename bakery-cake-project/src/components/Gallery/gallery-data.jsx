@@ -4,6 +4,8 @@ const galleryData = [
     srcImg: "./src/assets/test1.jpg",
     altImg: "",
     title: "Bizcocho",
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
   },
 
   {
@@ -11,6 +13,8 @@ const galleryData = [
     srcImg: "./src/assets/cake-card-img.jpg",
     altImg: "",
     title: "Bizcocho",
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
   },
 
   {
@@ -18,6 +22,8 @@ const galleryData = [
     srcImg: "./src/assets/test1.jpg",
     altImg: "",
     title: "Galletas",
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
   },
 
   {
@@ -25,6 +31,8 @@ const galleryData = [
     srcImg: "./src/assets/test1.jpg",
     altImg: "",
     title: "Bizcocho",
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
   },
 
   {
@@ -32,6 +40,8 @@ const galleryData = [
     srcImg: "./src/assets/test2.jpg",
     altImg: "",
     title: "Bizcocho",
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
   },
 
   {
@@ -39,6 +49,8 @@ const galleryData = [
     srcImg: "./src/assets/test3.jpg",
     altImg: "",
     title: "Bizcochitos",
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
   },
 
   {
@@ -46,6 +58,8 @@ const galleryData = [
     srcImg: "./src/assets/presentation-wall-5.jpg",
     altImg: "",
     title: "Galletas",
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
   },
 
   {
@@ -53,6 +67,8 @@ const galleryData = [
     srcImg: "./src/assets/presentation-wall-5.jpg",
     altImg: "",
     title: "Galletas",
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
   },
 
   {
@@ -60,6 +76,8 @@ const galleryData = [
     srcImg: "./src/assets/presentation-wall-5.jpg",
     altImg: "",
     title: "Galletas",
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
   },
 
   {
@@ -67,92 +85,117 @@ const galleryData = [
     srcImg: "./src/assets/presentation-wall-5.jpg",
     altImg: "",
     title: "Galletas",
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
   },
 
   {
-    id: "10",
+    id: "11",
     srcImg: "./src/assets/presentation-wall-5.jpg",
     altImg: "",
     title: "Galletas",
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
   },
 
   {
-    id: "10",
+    id: "12",
     srcImg: "./src/assets/presentation-wall-5.jpg",
     altImg: "",
     title: "Galletas",
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
   },
 
   {
-    id: "10",
+    id: "13",
     srcImg: "./src/assets/test1.jpg",
     altImg: "",
     title: "Galletas",
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
   },
 
   {
-    id: "10",
+    id: "14",
     srcImg: "./src/assets/test2.jpg",
     altImg: "",
     title: "Galletas",
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
   },
 
   {
-    id: "10",
+    id: "15",
     srcImg: "./src/assets/presentation-wall-5.jpg",
     altImg: "",
     title: "Galletas",
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
   },
 
   {
-    id: "10",
+    id: "16",
     srcImg: "./src/assets/test3.jpg",
     altImg: "",
     title: "Galletas",
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
   },
 
   {
-    id: "10",
+    id: "17",
     srcImg: "./src/assets/presentation-wall-5.jpg",
     altImg: "",
     title: "Galletas",
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
   },
 
   {
-    id: "10",
+    id: "18",
     srcImg: "./src/assets/presentation-wall-5.jpg",
     altImg: "",
     title: "Galletas",
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
   },
 
   {
-    id: "10",
+    id: "19",
     srcImg: "./src/assets/presentation-wall-5.jpg",
     altImg: "",
     title: "Galletas",
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
   },
 
   {
-    id: "10",
+    id: "20",
     srcImg: "./src/assets/test3.jpg",
     altImg: "",
     title: "Galletas",
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
   },
 
   {
-    id: "10",
+    id: "21",
     srcImg: "./src/assets/test1.jpg",
     altImg: "",
     title: "Galletas",
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
   },
 
   {
-    id: "10",
+    id: "22",
     srcImg: "./src/assets/test3.jpg",
     altImg: "",
     title: "Galletas",
-    },
-  
+    tema: "Bizcocho 1 libra",
+    descrip: "efweifjbweiofbwoifbwofiwbfiowbo",
+  },
 ];
 
 export default galleryData;

@@ -3,9 +3,19 @@ import Header from "./components/Header/Header";
 import Presentation from "./components/Presentation-Wall/Presentation";
 import Card from "./components/Card/Card";
 import Gallery from "./components/Gallery/Gallery";
-
+import PopUpCard from "./components/PopUp/PopUpCard";
+import Carrousel from "./components/Carrousel/Carrousel";
+import { useState } from "react";
+import galleryData from "./components/Gallery/gallery-data";
 
 function App() {
+
+  const [selectedItem, setSelectedItem] = useState({
+    title: "Mmmm, veamos que tenemos",
+    description: "Casi casi llego...",
+  });
+
+
   return (
     <>
       <div className="mx-auto grid grid-cols-12">
@@ -46,10 +56,18 @@ function App() {
         </section>
         <section className={`col-span-12 gallerySection`}>
           <h2>Galería</h2>
-            <Gallery />
+          <Gallery />
         </section>
+        <div className={`col-span-12 conocerSection`}>
+          <h2>Conocer mas detalles</h2>
+            <PopUpCard
+              img={selectedItem.srcImg}
+              description={selectedItem.descrip}
+              title={selectedItem.tema}
+            />
+          <Carrousel onSelectItem={setSelectedItem} />
+        </div>
       </div>
-      
     </>
   );
 }
