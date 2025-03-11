@@ -51,8 +51,25 @@ body {
   padding: 20px;
 }
 
+/* GALLERY SECTION APP CSS CLASSES */
 
-/* MEDIA QUERIES */
+
+.gallerySection {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 75px 75px 75px;
+  gap: 25px;
+}
+
+.gallerySection h2 {
+  font-family: "Grand Hotel";
+  font-size: 3rem;
+  text-align: center;
+}
+
+
+
+/* MEDIA QUERIES for CARD AND OFFER SECTION*/
 
 @media only screen and (max-width: 768px) {
   .cardSectionContainer {
@@ -67,5 +84,14 @@ body {
 
   .offerSection {
     margin: 5%;
+  }
+}
+
+/* MEDIA QUERIES FOR GALLERY SECTION*/
+
+@media (max-width: 480px) {
+  .gallerySection {
+  margin: 10px 10px;
+  padding: 10px 10px;
   }
 }

@@ -10,8 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "lightgallery": "^2.8.3",
+    "masonry-layout": "^4.2.2",
+    "prop-types": "^15.8.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-layout-masonry": "^1.2.0",
+    "react-responsive-masonry": "^2.7.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

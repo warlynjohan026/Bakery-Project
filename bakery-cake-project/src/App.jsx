@@ -2,6 +2,8 @@ import "tailwindcss";
 import Header from "./components/Header/Header";
 import Presentation from "./components/Presentation-Wall/Presentation";
 import Card from "./components/Card/Card";
+import Gallery from "./components/Gallery/Gallery";
+
 
 function App() {
   return (
@@ -42,7 +44,12 @@ function App() {
             </div>
           </div>
         </section>
+        <section className={`col-span-12 gallerySection`}>
+          <h2>Galería</h2>
+            <Gallery />
+        </section>
       </div>
+      
     </>
   );
 }
