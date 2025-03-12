@@ -8,6 +8,7 @@ import Carrousel from "./components/Carrousel/Carrousel";
 import { useState } from "react";
 import galleryData from "./components/Gallery/gallery-data";
 import Testimonial from "./components/Testimonial/Testimonial";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 
@@ -54,6 +55,9 @@ function App() {
             <h2>¡Mira que dicen mis clientes!</h2>
             <Testimonial />
           </div>
+        </section>
+        <section className={`col-span-12 footerSection`}>
+          <Footer />
         </section>
       </div>
     </>
