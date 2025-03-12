@@ -60,11 +60,11 @@ function App() {
         </section>
         <div className={`col-span-12 conocerSection`}>
           <h2>Conocer mas detalles</h2>
-            <PopUpCard
-              img={selectedItem.srcImg}
-              description={selectedItem.descrip}
-              title={selectedItem.tema}
-            />
+          <PopUpCard
+            img={selectedItem.srcImg}
+            description={selectedItem.description}
+            title={selectedItem.title}
+          />
           <Carrousel onSelectItem={setSelectedItem} />
         </div>
       </div>

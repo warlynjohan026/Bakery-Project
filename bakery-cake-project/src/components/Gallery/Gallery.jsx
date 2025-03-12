@@ -1,6 +1,6 @@
 import styles from "./gallery.module.css";
 import galleryData from "./gallery-data";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import PopUpCard from "../PopUp/PopUpCard";
 
@@ -9,12 +9,12 @@ function Gallery() {
   const [activeFilter, setActiveFilter] = useState("");
   const [seletectImg, setSelectedImg] = useState(null)
 
-  const collection = [...new Set(galleryData.map((item) => item.title))];
+  const collection = [...new Set(galleryData.map((item) => item.category))];
 
    const gallery_filter = (itemData) => {
      setData(
        itemData
-         ? galleryData.filter((item) => item.title === itemData)
+         ? galleryData.filter((item) => item.category === itemData)
          : galleryData
      );
      setActiveFilter(itemData);
@@ -81,7 +81,7 @@ function Gallery() {
       {seletectImg && (
         <div className={styles.popUpOverlay} onClick={closePopUp}>
           <PopUpCard
-            title={seletectImg.title}
+            title={seletectImg.category}
             description={seletectImg.descrip}
             img={seletectImg.srcImg}
           />
