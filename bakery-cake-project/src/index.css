@@ -90,7 +90,41 @@ body {
   padding-top: 40px;
 }
 
+/* TESTIMONIO SECTION APP CSS CLASSES */
 
+.testimonialSection h2 {
+   font-family: "Grand Hotel";
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.testimonialContainer {
+  background-color: rgb(255, 255, 255);
+  padding: 2% 10% 10% 10%;
+  margin: 25px 75px 75px 75px;
+  border-radius: 20px;
+}
+
+.slick-slider {
+  width: 100%;
+  overflow: visible; 
+  padding: 5% 5%;
+}
+
+.slick-list {
+  overflow: visible; 
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(0, 0, 0) !important;
+
+}
+
+.slick-dots {
+  left: -0px !important;
+}
 
 
 
@@ -119,4 +153,16 @@ body {
   margin: 10px 10px;
   padding: 10px 10px;
   }
+
+  .conocerSection {
+    margin: 10px 10px;
+    padding: 10px 10px;
+  }
+
+
+.testimonialContainer {
+  padding: 5px 5px;
+  margin: 20px 20px;
+}
+
 }

@@ -7,6 +7,7 @@ import PopUpCard from "./components/PopUp/PopUpCard";
 import Carrousel from "./components/Carrousel/Carrousel";
 import { useState } from "react";
 import galleryData from "./components/Gallery/gallery-data";
+import Testimonial from "./components/Testimonial/Testimonial";
 
 function App() {
 
@@ -67,6 +68,13 @@ function App() {
           />
           <Carrousel onSelectItem={setSelectedItem} />
         </div>
+        <section className={`col-span-12 testimonialSection`}>
+          <h2>Testimonios</h2>
+          <div className={`testimonialContainer`}>
+            <h2>¡Mira que dicen mis clientes!</h2>
+            <Testimonial />
+          </div>
+        </section>
       </div>
     </>
   );
