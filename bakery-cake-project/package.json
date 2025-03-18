@@ -23,6 +23,7 @@
     "react-layout-masonry": "^1.2.0",
     "react-responsive-carousel": "^3.2.23",
     "react-responsive-masonry": "^2.7.1",
+    "react-router-dom": "^7.3.0",
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1",
     "tailwindcss": "^4.0.14"

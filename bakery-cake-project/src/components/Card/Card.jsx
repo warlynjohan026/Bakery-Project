@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import styles from "./Card.module.css";
-import cardData from "./cardData";
 import axios from "axios";
 
 function Card() {
