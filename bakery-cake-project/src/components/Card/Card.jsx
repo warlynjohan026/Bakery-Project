@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./Card.module.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function Card() {
   const [dataCard, setDataCard] = useState([]);
@@ -31,7 +32,16 @@ function Card() {
             <h4>{item.title}</h4>
             <p className={styles.pTagCards}>{item.description}</p>
             <div className={styles.buttonContainer}>
-              <button className={styles.cardButton}>Cotizar</button>
+              <button className={styles.cardButton}>
+                <Link
+                  to="/cotizar"
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                >
+                  Cotizar
+                </Link>
+              </button>
             </div>
           </div>
         ))

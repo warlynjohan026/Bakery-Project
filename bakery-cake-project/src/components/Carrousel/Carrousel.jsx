@@ -5,6 +5,7 @@ import galleryData from '../Gallery/gallery-data';
 import { useState } from 'react';
 
 
+
 function Carrousel({onSelectItem}) {
 
     const [data] = useState(galleryData);

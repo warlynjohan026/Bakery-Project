@@ -19,7 +19,7 @@ function Header() {
           <a href="#testimony">Testimonios</a>
         </li>
       </ul>
-      <Link to={"contact"}>
+      <Link to={"/contact"}>
         <button>Contacto</button>
       </Link>
     </nav>

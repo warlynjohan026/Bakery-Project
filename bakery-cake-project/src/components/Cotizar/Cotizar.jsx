@@ -1,14 +1,14 @@
-import Header from "../components/Header/Header.jsx";
-import Footer from "../components/Footer/Footer.jsx"
-import styles from "./contact.module.css";
+import Header from "../Header/Header.jsx";
+import Footer from "../Footer/Footer.jsx";
+import styles from "./cotizar.module.css";
 
-function Contact() {
+function Cotizar() {
   return (
     <>
       <Header />
       <section className={`col-span-12 ${styles.contactContainer} `}>
         <div className={styles.contactWrapper}>
-          <h1 className={styles.titleContact}>¡Vamos a contactarnos!</h1>
+          <h1 className={styles.titleContact}>¡Vamos a contactarnos para una cotización!</h1>
           <h3 className={styles.titlemessage}>
             🥰Un bizcochito o unas galletas al año no hace daño🥰
           </h3>
@@ -34,6 +34,18 @@ function Contact() {
             </div>
 
             <div className={styles.inputbox}>
+              <label>
+                Oferta:
+                <select className={styles.field} name="oferta" required>
+                  <option value="">Selecciona una oferta</option>
+                  <option value="bizcocho">Bizcochos</option>
+                  <option value="galleta">Galletas</option>
+                  <option value="cupcake">CupCake</option>
+                </select>
+              </label>
+            </div>
+
+            <div className={styles.inputbox}>
               <label>Comentarios</label>
               <textarea
                 name=""
@@ -48,10 +60,10 @@ function Contact() {
             </div>
           </form>
         </div>
-          </section>
-          <Footer />
+      </section>
+      <Footer />
     </>
   );
 }
 
-export default Contact;
+export default Cotizar;
