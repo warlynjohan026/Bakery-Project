@@ -8,7 +8,7 @@ function Cotizar() {
       <Header />
       <section className={`col-span-12 ${styles.contactContainer} `}>
         <div className={styles.contactWrapper}>
-          <h1 className={styles.titleContact}>¡Vamos a contactarnos para una cotización!</h1>
+          <h1 className={styles.titleContact}>¡Vamos a contactarnos para una!</h1>
           <h3 className={styles.titlemessage}>
             🥰Un bizcochito o unas galletas al año no hace daño🥰
           </h3>
