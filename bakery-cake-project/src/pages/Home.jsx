@@ -57,11 +57,6 @@ function Home() {
           <Testimonial />
         </div>
       </section>
-
-      <section>
-        <Cotizar />
-      </section>
-
       <section className={`col-span-12 footerSection`}>
         <Footer />
       </section>

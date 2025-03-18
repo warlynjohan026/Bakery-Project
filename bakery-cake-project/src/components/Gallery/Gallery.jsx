@@ -1,25 +1,47 @@
 import styles from "./gallery.module.css";
-import galleryData from "./gallery-data";
 import { useState, useEffect } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import axios from "axios";
 
 function Gallery() {
-  const [data, setData] = useState(galleryData);
-  const [activeFilter, setActiveFilter] = useState("");
-  const [selectedImgIndex, setSelectedImgIndex] = useState(null);
+const [activeFilter, setActiveFilter] = useState("");
+const [selectedImgIndex, setSelectedImgIndex] = useState(null);
+const [dataGallery, setDataGallery] = useState([]);
+const [originalGallery, setOriginalGallery] = useState([]);
 
-  const collection = [...new Set(galleryData.map((item) => item.category))];
-
-  const gallery_filter = (itemData) => {
-    setData(
-      itemData
-        ? galleryData.filter((item) => item.category === itemData)
-        : galleryData
-    );
-    setActiveFilter(itemData);
+useEffect(() => {
+  const fetchDataGallery = async () => {
+    try {
+      const response = await axios.get("http://localhost:4000/api/gallery");
+      setDataGallery(response.data);
+      setOriginalGallery(response.data); // Guardar la copia original
+    } catch (error) {
+      console.log(
+        `Error al obtener la información de gallery de base de datos, error: ${error}`
+      );
+    }
   };
+
+  fetchDataGallery();
+}, []);
+
+const collection = [...new Set(originalGallery.map((item) => item.category))];
+
+const gallery_filter = (itemData) => {
+  if (!itemData) {
+    // Mostrar todas las imágenes
+    setDataGallery(originalGallery);
+  } else {
+    // Mostrar solo las imágenes filtradas
+    const filteredData = originalGallery.filter(
+      (item) => item.category === itemData
+    );
+    setDataGallery(filteredData);
+  }
+  setActiveFilter(itemData);
+};
 
   const handlePopUp = (index) => {
     setSelectedImgIndex(index);
@@ -31,12 +53,12 @@ function Gallery() {
 
   // Navegar entre las imágenes
   const nextImage = () => {
-    setSelectedImgIndex((prevIndex) => (prevIndex + 1) % data.length);
+    setSelectedImgIndex((prevIndex) => (prevIndex + 1) % dataGallery.length);
   };
 
   const prevImage = () => {
     setSelectedImgIndex((prevIndex) =>
-      prevIndex === 0 ? data.length - 1 : prevIndex - 1
+      prevIndex === 0 ? dataGallery.length - 1 : prevIndex - 1
     );
   };
 
@@ -59,10 +81,7 @@ function Gallery() {
         <ul>
           <li>
             <button
-              onClick={() => {
-                setData(galleryData);
-                setActiveFilter("");
-              }}
+              onClick={() => gallery_filter("")}
               className={activeFilter === "" ? styles.active : ""}
             >
               Todo
@@ -88,12 +107,12 @@ function Gallery() {
           gutterBreakpoints={{ 350: "12px", 750: "16px", 900: "24px" }}
         >
           <Masonry>
-            {data.map((item, index) => (
+            {dataGallery.map((item, index) => (
               <img
                 onClick={() => handlePopUp(index)}
                 key={index}
-                src={item.srcImg}
-                alt={item.altImg}
+                src={item.img}
+                alt={item.altimg}
                 style={{ width: "100%", display: "block", cursor: "pointer" }}
               />
             ))}
@@ -109,8 +128,8 @@ function Gallery() {
             onClick={(e) => e.stopPropagation()}
           >
             <img
-              src={data[selectedImgIndex].srcImg}
-              alt={data[selectedImgIndex].altImg}
+              src={dataGallery[selectedImgIndex].img}
+              alt={dataGallery[selectedImgIndex].altimg}
             />
             <button className={styles.closeBtn} onClick={closePopUp}>
               ×
