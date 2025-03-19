@@ -31,7 +31,6 @@ function Contact() {
     submitButton.disabled = true;
 
     try {
-      // Hacemos la solicitud POST con Axios
       const response = await axios.post(
         "http://localhost:4000/api/contact/send-contact-message",
         formData,
@@ -47,19 +46,19 @@ function Contact() {
         setFormData({ name: "", number: "", message: "" });
         setTimeout(() => {
           setMessage("");
-        }, 5000);
+        }, 15000);
       } else {
         setMessage("Hubo un problema al enviar el mensaje.");
         setTimeout(() => {
           setMessage("");
-        }, 5000);
+        }, 15000);
       }
     } catch (error) {
       console.error("Error:", error);
       setMessage("Hubo un error al enviar el formulario.");
       setTimeout(() => {
         setMessage("");
-      }, 5000);
+      }, 15000);
     }
   };
 
