@@ -43,7 +43,7 @@ function Home() {
       <section className={`col-span-12 conocerSection`}>
         <h2>Conocer más detalles</h2>
         <PopUpCard
-          img={selectedItem.srcImg}
+          img={selectedItem.img}
           description={selectedItem.description}
           title={selectedItem.title}
         />
