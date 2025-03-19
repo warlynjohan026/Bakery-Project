@@ -4,6 +4,7 @@ import db from './db_connection/db.js'
 import cardRoutes from './Routes/cardRoutes.js'
 import galleryRoutes from './Routes/galleryRoutes.js'
 import testimonieRoutes from './Routes/testimonieRoutes.js'
+import contactRoutes from './Routes/contactRoutes.js'
 import cors from 'cors'
 
 
@@ -21,7 +22,8 @@ app.get("/", (req, res) => {
 
 app.use('/api/card', cardRoutes)
 app.use('/api/gallery', galleryRoutes)
-app.use("/api/testimonies", testimonieRoutes);
+app.use('/api/testimonies', testimonieRoutes);
+app.use("/api/contact/send-contact-message", contactRoutes);
 
 
 
