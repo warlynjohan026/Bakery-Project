@@ -11,8 +11,11 @@ import Footer from "../components/Footer/Footer";
 
 function Home() {
   const [selectedItem, setSelectedItem] = useState({
-    title: "Mmmm, veamos que tenemos",
-    description: "Casi casi llego...",
+    img: "/src/assets/placeholderImage.png",
+    title:
+      "¡Hola, hola! 👋✨ Estás a punto de descubrir algo delicioso, ¿te animas? 😋 ",
+    description:
+      "Da clic en alguna de las imágenes del carrusel que está justo abajo para saber sobre cada creación. 🎂",
   });
 
   return (
