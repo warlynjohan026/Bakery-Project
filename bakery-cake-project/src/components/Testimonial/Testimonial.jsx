@@ -1,18 +1,34 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./testimonial.module.css";
-import testimonialData from "./testimonialData";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import axios from 'axios'
 
 function Testimonial() {
-  const [data] = useState(testimonialData);
+
+  const [dataDBTestimony, setDataDBTestimony] = useState([])
+
+   useEffect(() => {
+     const fetchDataTestimony = async () => {
+       try {
+         const response = await axios.get("http://localhost:4000/api/testimonies");
+         setDataDBTestimony(response.data);
+       } catch (error) {
+         console.log(
+           `Error al obtener la información de las cartas de base de datos, error: ${error}`
+         );
+       }
+     };
+
+     fetchDataTestimony();
+   }, []);
 
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4, // Ajusta el número de tarjetas visibles
+    slidesToShow: 2, // Ajusta el número de tarjetas visibles
     slidesToScroll: 1,
     responsive: [
       {
@@ -33,13 +49,13 @@ function Testimonial() {
   return (
     <>
       <Slider {...settings}>
-        {data.map((item) => (
-          <div key={item.id} className={styles.slideItem}>
+        {dataDBTestimony.map((item, index) => (
+          <div key={index} className={styles.slideItem}>
             <div className={styles.testimonialCard}>
               <img
                 className={styles.imgAvatar}
-                src={item.srcImg}
-                alt={item.altImg}
+                src={item.img}
+                alt={item.altimg}
               />
               <div className={styles.testimonialBody}>
                 <h4>{item.customer}</h4>
