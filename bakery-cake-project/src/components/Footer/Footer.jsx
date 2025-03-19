@@ -28,11 +28,16 @@ function Footer() {
         <div className={styles.infoContainer}>
           <div className={styles.contactTags}>
             <p className={styles.pTags}>
-              <FontAwesomeIcon
-                icon={faEnvelope}
-                style={{ color: "#D44638" }}
-                className={styles.icon}
-              />
+              <a
+                href="mailto:youremail@example.com"
+                style={{ textDecoration: "none" }}
+              >
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  style={{ color: "#D44638" }}
+                  className={styles.icon}
+                />
+              </a>
               <strong>Email:</strong>
             </p>
             <p className={styles.pTags}>
@@ -64,13 +69,19 @@ function Footer() {
       <section className={styles.social}>
         <h2 className={styles.titles}>Sígueme/contáctame</h2>
         <div className={styles.socialNetworkContainer}>
-          <a className={styles.fontIcon} href="">
+          <a className={styles.fontIcon} href="https://wa.me/8096648196">
             <FontAwesomeIcon icon={faWhatsapp} style={{ color: "#57cf07" }} />
           </a>
-          <a className={styles.fontIcon} href="">
+          <a
+            className={styles.fontIcon}
+            href="https://www.instagram.com/maricake_ymas/"
+          >
             <FontAwesomeIcon icon={faInstagram} style={{ color: "#E1306C" }} />
           </a>
-          <a className={styles.fontIcon} href="">
+          <a
+            className={styles.fontIcon}
+            href="https://www.facebook.com/mariluz.pena1"
+          >
             <FontAwesomeIcon icon={faFacebook} style={{ color: "#0d89e7" }} />
           </a>
         </div>
