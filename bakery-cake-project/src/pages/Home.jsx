@@ -7,7 +7,7 @@ import Carrousel from "../components/Carrousel/Carrousel";
 import { useState } from "react";
 import Testimonial from "../components/Testimonial/Testimonial";
 import Footer from "../components/Footer/Footer";
-import Cotizar from "../components/Cotizar/Cotizar";
+
 
 function Home() {
   const [selectedItem, setSelectedItem] = useState({
