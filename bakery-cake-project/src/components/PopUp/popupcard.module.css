@@ -101,6 +101,7 @@
 .expandText {
   display: -webkit-box;              /* Required for line-clamp to work */
   -webkit-line-clamp: 5;             /* Number of visible lines */
+  line-clamp: 5;                     /* Standard property for compatibility */
   -webkit-box-orient: vertical;      /* Vertical text direction */
   overflow: hidden;                  /* Hide overflowed content */
   text-overflow: ellipsis; 
