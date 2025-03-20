@@ -16,6 +16,7 @@ body {
   font-family: "Grand Hotel";
   font-size: 3rem;
   text-align: center;
+  margin-top: 1.5rem;
 }
 
 .cardContainer {
@@ -70,7 +71,7 @@ body {
   font-family: "Grand Hotel";
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .testimonialContainer {
@@ -105,23 +106,8 @@ body {
   left: -0px !important;
 }
 
-/* MEDIA QUERIES for CARD AND OFFER SECTION*/
 
-@media only screen and (max-width: 768px) {
-  .cardSectionContainer {
-    background-color: #f7f7f7;
-    border-radius: 20px;
-    margin: 0px;
-  }
-
-  .cardSection {
-    max-width: 100%;
-  }
-}
-
-/* MEDIA QUERIES FOR GALLERY SECTION*/
-
-@media (max-width: 480px) {
+@media (max-width: 430px) {
   .gallerySection {
     margin: 10px 10px;
     padding: 10px 10px;
@@ -129,16 +115,16 @@ body {
 
   .conocerSection {
     margin: 10px 10px;
-    padding: 10px 10px;
+    padding: 20px 20px;
   }
 
   .testimonialContainer {
-    padding: 5px 5px;
+    padding: 40px 40px;
     margin: 20px 20px;
   }
 
   .cardContainer {
-    padding: 5px 5px;
+    padding: 40px 5px;
     margin: 20px 20px;
   }
 

@@ -27,7 +27,7 @@ function Home() {
         <Presentation />
       </section>
 
-      <section id="testimony" className={`col-span-12 offerSection`}>
+      <section id="testimony" className={`col-span-12 testimonialSection`}>
         <h2>Conoce nuestra oferta</h2>
         <div className={`cardContainer`}>
           <h3>Lo más popular</h3>

@@ -1,91 +1,115 @@
 .popUpCard {
-    display: flex;
-    gap:30px;
-    border-radius: 20px;
-    padding: 20px;
-    max-width: 882px;
-    width: 100%;
-    max-height: 442px;
-    height: 100%;
-    background-color: #F6D3D3;
-    margin: 20px 50px;
+  display: flex;
+  gap: 30px;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 882px;
+  width: 100%;
+  max-height: 442px;
+  height: 100%;
+  background-color: #f6d3d3;
+  margin: 20px 50px;
 }
 
-
 .imgContainer {
-    background-color: aqua;
-    width: 350px;
-    height: auto;
-    border-radius: 20px;
-    overflow: hidden;
+  width: 500px;
+  height: auto;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .infoContainer {
-    padding: 10px 10px;
-    background-color: #F6D3D3;
-    width: 100%;
-    padding-top: 5%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  padding: 10px 10px;
+  background-color: #f6d3d3;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
 .imgContainer img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .img {
-    object-fit: cover;
+  width: 100%;
+  height: auto; /* 200px = 12.5rem */
+  object-fit: cover;
+  border-radius: 1.25rem; /* 20px = 1.25rem */
+  margin-bottom: 1.25rem; /* 20px = 1.25rem */
 }
 
-
 .buttonContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-    
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.7rem;
 }
 
 .buttonContainer button {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #FEDD03;
-    padding: 0.5rem 1.5rem;
-    border: none;
-    border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #fedd03;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 20px;
 }
 
 .pTagCards {
-    height: 15rem;
+  max-height: 13rem; /* No height limit */
+  overflow: auto; /* Show full content */
+
 }
 
+.buttonLeer {
+    font-family: "Montserrat", sans-serif;
+    color: hsl(263, 100%, 46%);
+    text-decoration: underline;
+    display: none;
+}
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .popUpCard {
     flex-direction: column;
-    max-height: 800px;
+    max-width: 350px;
+  width: 100%;
+  max-height: 1000px;
+  height: 100%;
     height: auto;
     overflow: auto;
     gap: 30px;
+  }
 
+  .imgContainer {
+    width: 100%;
+    height: 300px;
+  }
+
+  .img {
+    object-fit: contain;
 
   }
 
-.imgContainer {
-    width: 100%;
-    height: 250px;
+  .infoContainer {
+  padding: 0 10px;
 }
 
-.imgContainer img {
-    width: 100%;
-    height: 100%;
+.pTagCards {
+   max-height: none; /* Ensure no height restriction */
+  overflow: hidden; /* Hide overflow content */
+
 }
 
-.img {
-    object-fit: cover;
+.expandText {
+  display: -webkit-box;              /* Required for line-clamp to work */
+  -webkit-line-clamp: 3;             /* Number of visible lines */
+  -webkit-box-orient: vertical;      /* Vertical text direction */
+  overflow: hidden;                  /* Hide overflowed content */
+  text-overflow: ellipsis; 
 }
 
+.buttonLeer {
+    display: block;
+}
 
-  
 }

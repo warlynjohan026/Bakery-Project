@@ -14,7 +14,9 @@ const [originalGallery, setOriginalGallery] = useState([]);
 useEffect(() => {
   const fetchDataGallery = async () => {
     try {
-      const response = await axios.get("http://localhost:4000/api/gallery");
+      const response = await axios.get(
+        "http://192.168.100.237:4000/api/gallery"
+      );
       setDataGallery(response.data);
       setOriginalGallery(response.data); // Guardar la copia original
     } catch (error) {

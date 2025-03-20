@@ -13,7 +13,9 @@ function Carrousel({onSelectItem}) {
   useEffect(() => {
     const fetchDataCarrousel = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/api/gallery");
+        const response = await axios.get(
+          "http://192.168.100.237:4000/api/gallery"
+        );
         setDataDB(response.data);
       } catch (error) {
         console.log(
