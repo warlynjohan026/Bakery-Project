@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function PopUpCard({ title, description, img }) {
 
-  const [isOpen, setisOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className={styles.popUpCard}>
@@ -19,7 +19,7 @@ function PopUpCard({ title, description, img }) {
         <button
           className={styles.buttonLeer}
           onClick={() => {
-            setisOpen(!isOpen);
+            setIsOpen(!isOpen);
           }}
         >
           {isOpen ? "Leer menos" : "Leer más"}

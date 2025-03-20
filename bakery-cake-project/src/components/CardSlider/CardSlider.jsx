@@ -8,6 +8,7 @@ import axios from "axios";
 
 function CardSlider() {
   const [dataCard, setDataCard] = useState([]);
+  const [isOpen, setisOpen] = useState(false);
 
   useEffect(() => {
     const fetchDataCards = async () => {
@@ -58,7 +59,15 @@ function CardSlider() {
                 alt={item.altimg}
               />
               <h4>{item.title}</h4>
-              <p className={styles.pTagCards}>{item.description}</p>
+              <p className={`${styles.pTagCards} ${isOpen ? "" : styles.expandText}`}>{item.description}</p>
+               <button
+                        className={styles.buttonLeer}
+                        onClick={() => {
+                          setisOpen(!isOpen);
+                        }}
+                      >
+                        {isOpen ? "Leer menos" : "Leer más"}
+                      </button>
               <div className={styles.buttonContainer}>
                 <button className={styles.cardButton}>
                   <Link

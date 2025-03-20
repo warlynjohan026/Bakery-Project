@@ -35,9 +35,8 @@ h4 {
 .pTagCards {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
-  height: 11rem;
+  max-height: 11rem;
   overflow: auto; /* Permite el scroll si el texto es muy largo */
-  text-overflow: ellipsis;
 }
 
 .buttonContainer {
@@ -52,7 +51,13 @@ h4 {
   padding: 0.5rem 1.5rem;
   border: none;
   border-radius: 1.25rem; /* 20px = 1.25rem */
+  font-weight: 600;
 }
+
+.buttonLeer {
+    display: none;
+}
+
 
 @media (max-width: 430px) {
   .card {
@@ -70,7 +75,7 @@ h4 {
 
   .pTagCards {
     font-size: 0.8rem;
-    height: 11rem;
+    -maxheight: 11rem;
   }
 
   .slideItem {
@@ -87,4 +92,32 @@ h4 {
   .cardButton {
     font-size: 0.7rem;
   }
+
+  .pTagCards {
+   max-height: none; /* Ensure no height restriction */
+  overflow: hidden; /* Hide overflow content */
+
+}
+
+.expandText {
+  display: -webkit-box;              /* Required for line-clamp to work */
+  -webkit-line-clamp: 5;             /* Number of visible lines */
+  -webkit-box-orient: vertical;      /* Vertical text direction */
+  overflow: hidden;                  /* Hide overflowed content */
+  text-overflow: ellipsis; 
+}
+
+.buttonLeer {
+    display: block;
+    font-size: 0.8rem;
+    text-decoration: underline;
+   
+}
+
+.card { 
+  height: auto;
+}
+
+
+
 }

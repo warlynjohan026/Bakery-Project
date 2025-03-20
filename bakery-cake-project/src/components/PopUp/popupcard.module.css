@@ -53,18 +53,16 @@
   padding: 0.5rem 1.5rem;
   border: none;
   border-radius: 20px;
+  font-weight: 500;
 }
 
 .pTagCards {
-  max-height: 13rem; /* No height limit */
+  max-height: auto; /* No height limit */
   overflow: auto; /* Show full content */
 
 }
 
 .buttonLeer {
-    font-family: "Montserrat", sans-serif;
-    color: hsl(263, 100%, 46%);
-    text-decoration: underline;
     display: none;
 }
 
@@ -102,7 +100,7 @@
 
 .expandText {
   display: -webkit-box;              /* Required for line-clamp to work */
-  -webkit-line-clamp: 3;             /* Number of visible lines */
+  -webkit-line-clamp: 5;             /* Number of visible lines */
   -webkit-box-orient: vertical;      /* Vertical text direction */
   overflow: hidden;                  /* Hide overflowed content */
   text-overflow: ellipsis; 
@@ -110,6 +108,7 @@
 
 .buttonLeer {
     display: block;
+    text-decoration: underline;
 }
 
 }
