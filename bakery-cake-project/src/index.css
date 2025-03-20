@@ -22,8 +22,8 @@ body {
 .cardContainer {
   background-color: rgb(255, 255, 255);
   padding: 2% 10% 10% 10%;
-  margin: 25px 75px 75px 75px;
-  border-radius: 20px;
+  margin: 1.5625rem 4.6875rem 4.6875rem 4.6875rem;
+  border-radius: 1.25rem;
 }
 
 .cardContainer h3 {
@@ -37,8 +37,8 @@ body {
 .gallerySection {
   display: flex;
   flex-direction: column;
-  margin: 10px 75px 75px 75px;
-  gap: 25px;
+  margin: 0.625rem 4.6875rem 4.6875rem 4.6875rem;
+  gap: 1.5625rem;
 }
 
 .gallerySection h2 {
@@ -54,15 +54,15 @@ body {
   flex-direction: column;
   align-items: center;
   height: auto;
-  margin: 25px 75px 75px 75px;
-  border-radius: 20px;
+  margin: 1.5625rem 4.6875rem 4.6875rem 4.6875rem;
+  border-radius: 1.25rem;
 }
 
 .conocerSection h2 {
   font-family: "Grand Hotel";
   font-size: 3rem;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 2.5rem;
 }
 
 /* TESTIMONIO SECTION APP CSS CLASSES */
@@ -71,14 +71,14 @@ body {
   font-family: "Grand Hotel";
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .testimonialContainer {
   background-color: rgb(255, 255, 255);
   padding: 2% 10% 10% 10%;
-  margin: 25px 75px 75px 75px;
-  border-radius: 20px;
+  margin: 1.5625rem 4.6875rem 4.6875rem 4.6875rem;
+  border-radius: 1.25rem;
 }
 
 .testimonialContainer h3 {
@@ -103,30 +103,28 @@ body {
 }
 
 .slick-dots {
-  left: -0px !important;
+  left: 0 !important;
 }
-
 
 @media (max-width: 430px) {
   .gallerySection {
-    margin: 10px 10px;
-    padding: 10px 10px;
+    margin: 0.625rem 0.625rem;
+    padding: 0.625rem 0.625rem;
   }
 
   .conocerSection {
-    margin: 10px 10px;
-    padding: 20px 20px;
+    margin: 0.625rem 0.625rem;
+    padding: 1.25rem 1.25rem;
   }
 
   .testimonialContainer {
-    padding: 40px 40px;
-    margin: 20px 20px;
+    padding: 2.5rem 2.5rem;
+    margin: 1.25rem 1.25rem;
   }
 
   .cardContainer {
-    padding: 40px 5px;
-    margin: 40px 40px;
-    
+    padding: 2.5rem 0.3125rem;
+    margin: 2.5rem 2.5rem;
   }
 
   .testimonialContainer h3 {

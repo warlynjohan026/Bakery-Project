@@ -1,36 +1,34 @@
-
 .slideItem {
   box-sizing: border-box; 
-  padding: 0 10px; 
+  padding: 0 0.625rem; 
   width: 100%;
 }
 
 .testimonialCard {
   background-color: #fedd03;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%; 
-  max-width: 300px; 
+  max-width: 18.75rem; 
   margin: 0 auto; 
   overflow: hidden; 
 }
 
 .testimonialBody {
-  padding: 15px;
+  padding: 0.9375rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 10px;
+  gap: 0.625rem;
   word-wrap: break-word; 
 }
 
 .imgAvatar {
-  max-width: 80px; 
+  max-width: 5rem; 
   border-radius: 50%;
-  margin: 10px 0;
+  margin: 0.625rem 0;
 }
-

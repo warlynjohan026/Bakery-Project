@@ -1,15 +1,13 @@
 .hero {
   width: 100%;
   min-height: 100vh;
-  background: url("../../assets/presentation-wall-3.jpg") no-repeat center
-    center;
+  background: url("../../assets/presentation-wall-3.jpg") no-repeat center center;
   background-size: cover;
   display: flex;
   justify-content: center;
-  position: relative; /* Required for positioning the overlay */
+  position: relative;
 }
 
-/* Overlay to darken the background image */
 .hero::before {
   content: "";
   position: absolute;
@@ -17,8 +15,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.55); /* Dark overlay */
-  z-index: 0; /* Keep overlay behind content */
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 0;
 }
 
 .heroTextContainer {
@@ -26,9 +24,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white; /* Ensure text stands out on dark background */
-  z-index: 1; /* Keep text above the overlay */
-  position: relative; /* Ensure text stays above the dark overlay */
+  color: white;
+  z-index: 1;
+  position: relative;
 }
 
 .hero h2 {
@@ -36,9 +34,9 @@
   font-weight: 700;
   font-style: normal;
   font-size: 7rem;
-  color: white; /* Ensures the text is white */
-  max-width: 950px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a shadow for better readability */
+  color: white;
+  max-width: 59.375rem;
+  text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.7);
 }
 
 .hero p {
@@ -46,21 +44,21 @@
   font-weight: 400;
   font-style: normal;
   font-size: 2.5rem;
-  color: white; /* Ensures the text is white */
-  max-width: 900px;
+  color: white;
+  max-width: 56.25rem;
   text-align: center;
 }
 
 .hero button {
   background-color: hsl(263, 100%, 46%);
   font-family: "Caveat", sans-serif;
-  border-radius: 50px;
-  font-size: 30px;
-  padding: 15px 20px;
+  border-radius: 3.125rem;
+  font-size: 1.875rem;
+  padding: 0.9375rem 1.25rem;
   color: white;
   cursor: pointer;
   border: none;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   transition: background-color 0.3s ease;
 }
 
@@ -68,47 +66,43 @@
   background-color: hsl(260, 100%, 36%);
 }
 
-@media (max-width: 700px) {
-
-
+@media (max-width: 43.75rem) {
   .hero h2 {
-  font-family: "Cabin Sketch", cursive;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 4rem;
-  color: white; 
-  max-width: 950px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  padding-left: 15px;
-}
+    font-family: "Cabin Sketch", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4rem;
+    color: white;
+    max-width: 59.375rem;
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.7);
+    padding-left: 0.9375rem;
+  }
 
-.hero p {
-  font-family: "Caveat", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.5rem;
-  color: white; /* Ensures the text is white */
-  max-width: 900px;
-  text-align: center;
-}
+  .hero p {
+    font-family: "Caveat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    max-width: 56.25rem;
+    text-align: center;
+  }
 
-.hero button {
-  background-color: hsl(263, 100%, 46%);
-  font-family: "Caveat", sans-serif;
-  border-radius: 50px;
-  font-size: 16px;
-  font-weight: 800;
-  padding: 15px 20px;
-  color: white;
-  cursor: pointer;
-  border: none;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
-}
+  .hero button {
+    background-color: hsl(263, 100%, 46%);
+    font-family: "Caveat", sans-serif;
+    border-radius: 3.125rem;
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 0.9375rem 1.25rem;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-top: 1.25rem;
+    transition: background-color 0.3s ease;
+  }
 
-.hero button:hover {
-  background-color: hsl(260, 100%, 36%);
-}
-
- 
+  .hero button:hover {
+    background-color: hsl(260, 100%, 36%);
+  }
 }

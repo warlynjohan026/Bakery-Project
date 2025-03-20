@@ -1,30 +1,30 @@
 .popUpCard {
   display: flex;
-  gap: 30px;
-  border-radius: 20px;
-  padding: 20px;
-  max-width: 882px;
+  gap: 1.875rem;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  max-width: 55.125rem;
   width: 100%;
-  max-height: 442px;
+  max-height: 27.625rem;
   height: 100%;
   background-color: #f6d3d3;
-  margin: 20px 50px;
+  margin: 1.25rem 3.125rem;
 }
 
 .imgContainer {
-  width: 500px;
+  width: 31.25rem;
   height: auto;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   overflow: hidden;
 }
 
 .infoContainer {
-  padding: 10px 10px;
+  padding: 0.625rem;
   background-color: #f6d3d3;
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 0.125rem;
 }
 
 .imgContainer img {
@@ -34,10 +34,10 @@
 
 .img {
   width: 100%;
-  height: auto; /* 200px = 12.5rem */
+  height: auto;
   object-fit: cover;
-  border-radius: 1.25rem; /* 20px = 1.25rem */
-  margin-bottom: 1.25rem; /* 20px = 1.25rem */
+  border-radius: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .buttonContainer {
@@ -52,64 +52,59 @@
   background-color: #fedd03;
   padding: 0.5rem 1.5rem;
   border: none;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   font-weight: 500;
 }
 
 .pTagCards {
-  max-height: auto; /* No height limit */
-  overflow: auto; /* Show full content */
-
+  max-height: auto;
+  overflow: auto;
 }
 
 .buttonLeer {
-    display: none;
+  display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
   .popUpCard {
     flex-direction: column;
-    max-width: 350px;
-  width: 100%;
-  max-height: 1000px;
-  height: 100%;
+    max-width: 21.875rem;
+    width: 100%;
+    max-height: 62.5rem;
     height: auto;
     overflow: auto;
-    gap: 30px;
+    gap: 1.875rem;
   }
 
   .imgContainer {
     width: 100%;
-    height: 300px;
+    height: 18.75rem;
   }
 
   .img {
     object-fit: contain;
-
   }
 
   .infoContainer {
-  padding: 0 10px;
-}
+    padding: 0 0.625rem;
+  }
 
-.pTagCards {
-   max-height: none; /* Ensure no height restriction */
-  overflow: hidden; /* Hide overflow content */
+  .pTagCards {
+    max-height: none;
+    overflow: hidden;
+  }
 
-}
+  .expandText {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
-.expandText {
-  display: -webkit-box;              /* Required for line-clamp to work */
-  -webkit-line-clamp: 5;             /* Number of visible lines */
-  line-clamp: 5;                     /* Standard property for compatibility */
-  -webkit-box-orient: vertical;      /* Vertical text direction */
-  overflow: hidden;                  /* Hide overflowed content */
-  text-overflow: ellipsis; 
-}
-
-.buttonLeer {
+  .buttonLeer {
     display: block;
     text-decoration: underline;
-}
-
+  }
 }
