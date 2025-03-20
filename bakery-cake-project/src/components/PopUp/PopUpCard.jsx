@@ -12,7 +12,9 @@ function PopUpCard({ title, description, img }) {
         <p className={styles.pTagCards}>{description}</p>
         <div className={styles.buttonContainer}>
           <button>
-            <Link to="/cotizar">Cotizar</Link>
+            <Link to="/cotizar">
+              Cotizar
+            </Link>
           </button>
         </div>
       </div>
