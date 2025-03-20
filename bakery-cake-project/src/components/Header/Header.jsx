@@ -6,6 +6,7 @@ import { useState } from "react";
 function Header() {
 
   const [isOpen, setIsOpen] = useState(false)
+    const handleLinkClick = () => setIsOpen(false);
 
 
   return (
@@ -15,13 +16,13 @@ function Header() {
         <Link to={"/"}>
           <li>Home</li>
         </Link>
-        <li>
+        <li onClick={handleLinkClick}>
           <a href="#offer">Oferta</a>
         </li>
-        <li>
+        <li onClick={handleLinkClick}>
           <a href="#gallery">Galería</a>
         </li>
-        <li>
+        <li onClick={handleLinkClick}>
           <a href="#testimony">Testimonios</a>
         </li>
         <Link to={"/contact"}>
