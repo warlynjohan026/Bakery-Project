@@ -1,3 +1,5 @@
+/* Importar fuentes locales */
+
 .hero {
   width: 100%;
   min-height: 100vh;
@@ -31,7 +33,7 @@
 
 .hero h2 {
   font-family: "Cabin Sketch", cursive;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
   font-size: 7rem;
   color: white;
@@ -69,7 +71,7 @@
 @media (max-width: 43.75rem) {
   .hero h2 {
     font-family: "Cabin Sketch", cursive;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
     font-size: 4rem;
     color: white;

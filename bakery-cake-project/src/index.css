@@ -1,5 +1,31 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Grand Hotel';
+  src: url('./fonts/grand-hotel-v19-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block; 
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cabin Sketch';
+  src: url('./fonts/cabin-sketch-v21-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Caveat';
+  src: url('./fonts/caveat-v18-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +42,7 @@ body {
   font-family: "Grand Hotel";
   font-size: 3rem;
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 .cardContainer {

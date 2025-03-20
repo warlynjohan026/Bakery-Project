@@ -32,3 +32,12 @@
   border-radius: 50%;
   margin: 0.625rem 0;
 }
+
+@media (max-width: 500px) {
+ .testimonialBody {
+  font-size: 0.9rem;
+   
+  }
+
+
+}

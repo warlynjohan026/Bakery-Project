@@ -30,7 +30,7 @@ function Testimonial() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2, // Ajusta el número de tarjetas visibles
+    slidesToShow: 2, 
     slidesToScroll: 1,
     responsive: [
       {

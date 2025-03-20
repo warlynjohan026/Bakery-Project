@@ -3,7 +3,6 @@ import styles from "./popupcard.module.css";
 import { Link } from "react-router-dom";
 
 function PopUpCard({ title, description, img }) {
-
   const [isOpen, setIsOpen] = useState(false);
 
   return (

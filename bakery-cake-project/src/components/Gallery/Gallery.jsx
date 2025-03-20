@@ -18,7 +18,7 @@ useEffect(() => {
         "http://192.168.100.237:4000/api/gallery"
       );
       setDataGallery(response.data);
-      setOriginalGallery(response.data); // Guardar la copia original
+      setOriginalGallery(response.data); 
     } catch (error) {
       console.log(
         `Error al obtener la información de gallery de base de datos, error: ${error}`
@@ -33,10 +33,10 @@ const collection = [...new Set(originalGallery.map((item) => item.category))];
 
 const gallery_filter = (itemData) => {
   if (!itemData) {
-    // Mostrar todas las imágenes
+    
     setDataGallery(originalGallery);
   } else {
-    // Mostrar solo las imágenes filtradas
+  
     const filteredData = originalGallery.filter(
       (item) => item.category === itemData
     );
@@ -50,10 +50,10 @@ const gallery_filter = (itemData) => {
   };
 
   const closePopUp = () => {
-    setSelectedImgIndex(null); // Oculta el popup
+    setSelectedImgIndex(null);
   };
 
-  // Navegar entre las imágenes
+ 
   const nextImage = () => {
     setSelectedImgIndex((prevIndex) => (prevIndex + 1) % dataGallery.length);
   };
@@ -64,7 +64,7 @@ const gallery_filter = (itemData) => {
     );
   };
 
-  // Cerrar con tecla ESC o navegar con flechas
+  
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "Escape") closePopUp();
@@ -78,7 +78,6 @@ const gallery_filter = (itemData) => {
 
   return (
     <div className={styles.galleryWrapper}>
-      {/* Filtros */}
       <div className={styles.filterItems}>
         <ul>
           <li>
@@ -102,7 +101,6 @@ const gallery_filter = (itemData) => {
         </ul>
       </div>
 
-      {/* Galería */}
       <div className={styles.galleryContainer}>
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
@@ -122,7 +120,6 @@ const gallery_filter = (itemData) => {
         </ResponsiveMasonry>
       </div>
 
-      {/* Popup de imagen en pantalla completa */}
       {selectedImgIndex !== null && (
         <div className={styles.popupOverlay} onClick={closePopUp}>
           <div
@@ -137,8 +134,6 @@ const gallery_filter = (itemData) => {
               ×
             </button>
 
-            {/* Botones de navegación */}
-            {/* Botones de navegación */}
             <button className={styles.navBtnLeft} onClick={prevImage}>
               <FontAwesomeIcon
                 icon={faArrowLeft}

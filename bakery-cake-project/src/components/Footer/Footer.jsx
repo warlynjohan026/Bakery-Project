@@ -15,7 +15,7 @@ function Footer() {
   return (
     <footer className={styles.footerContainer}>
       <section className={styles.businessMark}>
-        <h2 className={styles.titles}>MaryCake</h2>
+        <h2 className={styles.titles}>MaryCake & Más</h2>
         <h3 className={styles.titleVerseCap}>Colosenses 3:17</h3>
         <p className={styles.pTagVerse}>
           Y todo lo que hacéis, sea de palabra o de hecho, hacedlo todo en el

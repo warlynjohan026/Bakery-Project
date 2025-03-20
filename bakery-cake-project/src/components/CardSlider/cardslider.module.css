@@ -6,43 +6,41 @@
 
 .card {
   border-radius: 1.25rem;
-  padding: 1.25rem; 
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
-    max-width: 330px; 
+  max-width: 330px;
   width: 100%;
-  margin: 0 auto; 
-  height: 33.25rem; 
-  box-shadow: 0.3125rem 0.3125rem 0.3125rem hsla(0, 0%, 0%, 0.1); 
+  margin: 0 auto;
+  height: 33.25rem;
+  box-shadow: 0.3125rem 0.3125rem 0.3125rem hsla(0, 0%, 0%, 0.1);
   background-color: #f6d3d3;
 }
 
 .cardImg {
   width: 100%;
-  height: 12.5rem; 
+  height: 12.5rem;
   object-fit: cover;
-  border-radius: 1.25rem; 
-  margin-bottom: 1.25rem; 
+  border-radius: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 h4 {
-  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
 .pTagCards {
-  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   max-height: 11rem;
-  overflow: auto; 
+  overflow: auto;
 }
 
 .buttonContainer {
   display: flex;
   justify-content: center;
-  margin-top: 1.25rem; 
+  margin-top: 1.25rem;
 }
 
 .cardButton {
@@ -50,23 +48,22 @@ h4 {
   background-color: #fedd03;
   padding: 0.5rem 1.5rem;
   border: none;
-  border-radius: 1.25rem; 
+  border-radius: 1.25rem;
   font-weight: 500;
 }
 
 .buttonLeer {
-    display: none;
+  display: none;
 }
-
 
 @media (max-width: 430px) {
   .card {
-    width: 15rem; 
-    height: 25rem; 
+    width: 15rem;
+    height: 25rem;
   }
 
   .cardImg {
-    height: 8rem; 
+    height: 8rem;
   }
 
   h4 {
@@ -86,7 +83,7 @@ h4 {
 
   .buttonContainer {
     margin-top: 0rem;
-    margin-top: 0.8rem; 
+    margin-top: 0.8rem;
   }
 
   .cardButton {
@@ -94,31 +91,26 @@ h4 {
   }
 
   .pTagCards {
-   max-height: none; 
-  overflow: hidden;
+    max-height: none;
+    overflow: hidden;
+  }
 
-}
+  .expandText {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
-.expandText {
-  display: -webkit-box;              
-  -webkit-line-clamp: 5;             
-  line-clamp: 5;                     
-  -webkit-box-orient: vertical;      
-  overflow: hidden;                  
-  text-overflow: ellipsis; 
-}
-
-.buttonLeer {
+  .buttonLeer {
     display: block;
     font-size: 0.8rem;
     text-decoration: underline;
-   
-}
+  }
 
-.card { 
-  height: auto;
-}
-
-
-
+  .card {
+    height: auto;
+  }
 }

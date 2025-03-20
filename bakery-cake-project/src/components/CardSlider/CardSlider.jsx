@@ -29,7 +29,7 @@ function CardSlider() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4, // Ajusta el número de tarjetas visibles
+    slidesToShow: 4, 
     slidesToScroll: 1,
     responsive: [
       {

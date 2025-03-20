@@ -30,7 +30,7 @@ function Cotizar() {
     const submitButton = document.getElementById("submitButton");
     submitButton.disabled = true;
 
-    // Validación simple del número de teléfono (puedes personalizarla más)
+   
     if (!/^\d{10}$/.test(formData.number)) {
       setResponseMessage("Por favor, ingresa un número válido de 10 dígitos.");
       submitButton.disabled = false;
@@ -39,7 +39,7 @@ function Cotizar() {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/contact/send-cotizacion-message", // Cambia la URL según corresponda
+        "http://localhost:4000/api/contact/send-cotizacion-message", 
         formData,
         {
           headers: {

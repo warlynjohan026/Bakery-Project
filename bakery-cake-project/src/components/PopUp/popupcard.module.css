@@ -48,7 +48,6 @@
 }
 
 .buttonContainer button {
-  font-family: "Montserrat", sans-serif;
   background-color: #fedd03;
   padding: 0.5rem 1.5rem;
   border: none;
@@ -92,6 +91,7 @@
   .pTagCards {
     max-height: none;
     overflow: hidden;
+    font-size: 0.9rem;
   }
 
   .expandText {
@@ -106,5 +106,6 @@
   .buttonLeer {
     display: block;
     text-decoration: underline;
+    font-size: 0.9rem;
   }
 }

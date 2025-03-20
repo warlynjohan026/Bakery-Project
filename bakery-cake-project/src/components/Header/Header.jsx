@@ -4,31 +4,36 @@ import { FaBars } from "react-icons/fa";
 import { useState } from "react";
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
 
-  const [isOpen, setIsOpen] = useState(false)
-    const handleLinkClick = () => setIsOpen(false);
+  const handleLinkClick = () => setIsOpen(false);
 
 
   return (
     <nav className={`${styles.navbar}`}>
-      <h2>MaryCake</h2>
+      <h2>MaryCake  Más</h2>
       <ul className={`${isOpen ? styles.active : ""}`}>
-        <Link to={"/"}>
+        <Link to="/" onClick={handleLinkClick}>
           <li>Home</li>
         </Link>
-        <li onClick={handleLinkClick}>
-          <a href="#offer">Oferta</a>
-        </li>
-        <li onClick={handleLinkClick}>
-          <a href="#gallery">Galería</a>
-        </li>
-        <li onClick={handleLinkClick}>
-          <a href="#testimony">Testimonios</a>
-        </li>
-        <Link to={"/contact"}>
+
+        <a href="/#offer" onClick={handleLinkClick}>
+          <li>Oferta</li>
+        </a>
+
+        <a href="/#gallery" onClick={handleLinkClick}>
+          <li>Galería</li>
+        </a>
+
+        <a href="/#testimony" onClick={handleLinkClick}>
+          <li>Testimonios</li>
+        </a>
+
+        <Link to="/contact" onClick={handleLinkClick}>
           <button>Contácto</button>
         </Link>
       </ul>
+
       <button
         className={`${styles.buttonBars}`}
         onClick={() => setIsOpen(!isOpen)}
