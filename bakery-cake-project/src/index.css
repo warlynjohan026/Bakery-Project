@@ -12,48 +12,26 @@ body {
 
 /* OFFER SECTION APP CSS CLASSES */
 
-.offerSection {
-  display: flex;
-  flex-direction: column;
-  margin: 25px 75px 75px 75px;
-  gap: 25px;
-}
-
 .offerSection h2 {
   font-family: "Grand Hotel";
   font-size: 3rem;
   text-align: center;
 }
 
-.cardSectionContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 20px 20px 60px 20px;
-  gap: 20px;
-  background-color: #ffffff;
+.cardContainer {
+  background-color: rgb(255, 255, 255);
+  padding: 2% 10% 10% 10%;
+  margin: 25px 75px 75px 75px;
   border-radius: 20px;
 }
 
-.cardSectionContainer h3 {
+.cardContainer h3 {
   font-family: "Grand Hotel";
   font-size: 2.5rem;
   text-align: center;
 }
 
-.cardSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-}
-
 /* GALLERY SECTION APP CSS CLASSES */
-
 
 .gallerySection {
   display: flex;
@@ -68,8 +46,6 @@ body {
   text-align: center;
 }
 
-
-
 .conocerSection {
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -79,7 +55,6 @@ body {
   height: auto;
   margin: 25px 75px 75px 75px;
   border-radius: 20px;
-
 }
 
 .conocerSection h2 {
@@ -92,7 +67,7 @@ body {
 /* TESTIMONIO SECTION APP CSS CLASSES */
 
 .testimonialSection h2 {
-   font-family: "Grand Hotel";
+  font-family: "Grand Hotel";
   font-size: 3rem;
   text-align: center;
   margin-bottom: 30px;
@@ -105,26 +80,30 @@ body {
   border-radius: 20px;
 }
 
+.testimonialContainer h3 {
+  font-family: "Grand Hotel";
+  font-size: 2.5rem;
+  text-align: center;
+}
+
 .slick-slider {
   width: 100%;
-  overflow: visible; 
+  overflow: visible;
   padding: 5% 5%;
 }
 
 .slick-list {
-  overflow: visible; 
+  overflow: visible;
 }
 
 .slick-prev:before,
 .slick-next:before {
   color: rgb(0, 0, 0) !important;
-
 }
 
 .slick-dots {
   left: -0px !important;
 }
-
 
 /* MEDIA QUERIES for CARD AND OFFER SECTION*/
 
@@ -138,18 +117,14 @@ body {
   .cardSection {
     max-width: 100%;
   }
-
-  .offerSection {
-    margin: 5%;
-  }
 }
 
 /* MEDIA QUERIES FOR GALLERY SECTION*/
 
 @media (max-width: 480px) {
   .gallerySection {
-  margin: 10px 10px;
-  padding: 10px 10px;
+    margin: 10px 10px;
+    padding: 10px 10px;
   }
 
   .conocerSection {
@@ -157,10 +132,21 @@ body {
     padding: 10px 10px;
   }
 
+  .testimonialContainer {
+    padding: 5px 5px;
+    margin: 20px 20px;
+  }
 
-.testimonialContainer {
-  padding: 5px 5px;
-  margin: 20px 20px;
-}
+  .cardContainer {
+    padding: 5px 5px;
+    margin: 20px 20px;
+  }
 
+  .testimonialContainer h3 {
+    font-size: 2rem;
+  }
+
+  .conocerSection h2 {
+    font-size: 2.5rem;
+  }
 }

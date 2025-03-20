@@ -1,13 +1,12 @@
 import Header from "../components/Header/Header";
 import Presentation from "../components/Presentation-Wall/Presentation";
-import Card from "../components/Card/Card";
 import Gallery from "../components/Gallery/Gallery";
 import PopUpCard from "../components/PopUp/PopUpCard";
 import Carrousel from "../components/Carrousel/Carrousel";
 import { useState } from "react";
 import Testimonial from "../components/Testimonial/Testimonial";
 import Footer from "../components/Footer/Footer";
-
+import CardSlider from "../components/CardSlider/CardSlider";
 
 function Home() {
   const [selectedItem, setSelectedItem] = useState({
@@ -28,13 +27,11 @@ function Home() {
         <Presentation />
       </section>
 
-      <section id="offer" className={`col-span-12 offerSection`}>
+      <section id="testimony" className={`col-span-12 offerSection`}>
         <h2>Conoce nuestra oferta</h2>
-        <div className={`col-span-12 cardSectionContainer`}>
+        <div className={`cardContainer`}>
           <h3>Lo más popular</h3>
-          <div className={`cardSection`}>
-            <Card />
-          </div>
+          <CardSlider />
         </div>
       </section>
 
@@ -56,10 +53,11 @@ function Home() {
       <section id="testimony" className={`col-span-12 testimonialSection`}>
         <h2>Testimonios</h2>
         <div className={`testimonialContainer`}>
-          <h2>¡Mira qué dicen mis clientes!</h2>
+          <h3>¡Mira qué dicen mis clientes!</h3>
           <Testimonial />
         </div>
       </section>
+
       <section className={`col-span-12 footerSection`}>
         <Footer />
       </section>
