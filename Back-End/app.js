@@ -13,7 +13,7 @@ const app = express();
 dotenv.config();
 app.use(cors());
 db();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 
 app.use(express.json())
 
@@ -30,5 +30,5 @@ app.use("/api/contact/send-cotizacion-message", cotizacionRoutes);
 
 
 app.listen(PORT, () => {
-    console.log(`Server listeting at http://localhost:${PORT}`)
-})
+  console.log(`Server listeting at http://localhost:${PORT}`);
+});
