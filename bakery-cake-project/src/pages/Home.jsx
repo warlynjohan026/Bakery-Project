@@ -10,6 +10,7 @@ import CardSlider from "../components/CardSlider/CardSlider";
 
 function Home() {
   const [selectedItem, setSelectedItem] = useState({
+    img: "/placeholderImage.jpg",
     title:
       "¡Hola, hola! 👋✨ Estás a punto de descubrir algo delicioso, ¿te animas? 😋 ",
     description:
