@@ -1,4 +1,4 @@
-import Style from "./Presentation.module.css";
+import Style from "./presentation.module.css";
 
 function Presentation() {
 
