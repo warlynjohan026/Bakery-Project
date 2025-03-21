@@ -15,6 +15,9 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongoose": "^8.12.1",
-    "resend": "^4.1.2"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "resend": "^4.1.2",
+    "scheduler": "^0.25.0"
   }
 }
