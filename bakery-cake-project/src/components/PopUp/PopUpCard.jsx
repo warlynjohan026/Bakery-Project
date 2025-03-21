@@ -10,7 +10,7 @@ function PopUpCard({ title, description, img }) {
       <div className={styles.imgContainer}>
         <img
           className={styles.img}
-          src={"src/assets/placeholderImage.jpg"}
+          src={"/placeholderImage.jpg"}
           altimg={title}
         />
       </div>
