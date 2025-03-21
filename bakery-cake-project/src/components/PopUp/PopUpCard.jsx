@@ -8,7 +8,11 @@ function PopUpCard({ title, description, img }) {
   return (
     <div className={styles.popUpCard}>
       <div className={styles.imgContainer}>
-        <img className={styles.img} src={img} altimg={title} />
+        <img
+          className={styles.img}
+          src={"src/assets/placeholderImage.jpg"}
+          altimg={title}
+        />
       </div>
       <div className={styles.infoContainer}>
         <h4>{title}</h4>

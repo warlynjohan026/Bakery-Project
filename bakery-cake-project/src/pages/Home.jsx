@@ -10,11 +10,10 @@ import CardSlider from "../components/CardSlider/CardSlider";
 
 function Home() {
   const [selectedItem, setSelectedItem] = useState({
-    img: "/src/assets/placeholderImage.png",
     title:
       "¡Hola, hola! 👋✨ Estás a punto de descubrir algo delicioso, ¿te animas? 😋 ",
     description:
-      "Da clic en alguna de las imágenes del carrusel que está justo abajo para saber sobre cada creación. 🎂",
+      "🎂 Si quieres conocer más sobre cada una de mis creaciones, solo da clic en cualquiera de las imágenes del carrusel de abajo. Ahí te cuento todos los detalles y lo que hace especial cada bizcocho. ¡Explora y encuentra tu favorito!",
   });
 
   return (
