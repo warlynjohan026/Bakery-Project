@@ -51,7 +51,7 @@ function Home() {
       </section>
 
       <section id="testimony" className={`col-span-12 testimonialSection`}>
-        <h2>Reviews</h2>
+        <h2>Reseñas</h2>
         <div className={`testimonialContainer`}>
           <h3>¡Mira qué dicen mis clientes!</h3>
           <Testimonial />

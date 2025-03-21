@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import axios from 'axios'
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 function Testimonial() {
 
   const [dataDBTestimony, setDataDBTestimony] = useState([])
@@ -12,9 +14,7 @@ function Testimonial() {
    useEffect(() => {
      const fetchDataTestimony = async () => {
        try {
-         const response = await axios.get(
-           "http://192.168.100.237:4000/api/testimonies"
-         );
+         const response = await axios.get(`${BACKEND_URL}/testimonies`);
          setDataDBTestimony(response.data);
        } catch (error) {
          console.log(

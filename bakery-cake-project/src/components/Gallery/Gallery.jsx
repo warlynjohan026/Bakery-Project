@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 function Gallery() {
 const [activeFilter, setActiveFilter] = useState("");
 const [selectedImgIndex, setSelectedImgIndex] = useState(null);
@@ -14,9 +16,7 @@ const [originalGallery, setOriginalGallery] = useState([]);
 useEffect(() => {
   const fetchDataGallery = async () => {
     try {
-      const response = await axios.get(
-        "http://192.168.100.237:4000/api/gallery"
-      );
+      const response = await axios.get(`${BACKEND_URL}/gallery`);
       setDataGallery(response.data);
       setOriginalGallery(response.data); 
     } catch (error) {

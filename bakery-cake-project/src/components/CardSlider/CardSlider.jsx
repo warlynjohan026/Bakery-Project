@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 function CardSlider() {
   const [dataCard, setDataCard] = useState([]);
   const [isOpen, setisOpen] = useState(false);
@@ -13,9 +15,7 @@ function CardSlider() {
   useEffect(() => {
     const fetchDataCards = async () => {
       try {
-        const response = await axios.get(
-          "http://192.168.100.237:4000/api/card"
-        );
+        const response = await axios.get(`${BACKEND_URL}/card`);
         setDataCard(response.data);
       } catch (error) {
         console.error(`Error al obtener las tarjetas: ${error}`);
