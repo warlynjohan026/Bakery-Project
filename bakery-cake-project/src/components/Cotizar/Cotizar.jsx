@@ -123,7 +123,9 @@ function Cotizar() {
                   <option value="galleta">Galletas</option>
                   <option value="cupcake">CupCakes</option>
                   <option value="brownie">Brownies</option>
+                  <option value="brownie">Flan</option>
                   <option value="combo">Combo</option>
+                  <option value="combo">Otro</option>
                 </select>
               </label>
             </div>
