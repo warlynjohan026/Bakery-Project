@@ -5,6 +5,8 @@ import { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -32,7 +34,7 @@ function Contact() {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/contact/send-contact-message",
+        `${BACKEND_URL}/contact/send-contact-message`,
         formData,
         {
           headers: {

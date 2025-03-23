@@ -5,6 +5,8 @@ import styles from "./cotizar.module.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 function Cotizar() {
   const [formData, setFormData] = useState({
     name: "",
@@ -39,7 +41,7 @@ function Cotizar() {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/contact/send-cotizacion-message", 
+        `${BACKEND_URL}/contact/send-cotizacion-message`,
         formData,
         {
           headers: {
