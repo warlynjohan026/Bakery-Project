@@ -8,13 +8,14 @@ import contactRoutes from './Routes/contactRoutes.js'
 import cotizacionRoutes from './Routes/cotizacionRoutes.js'
 import cors from 'cors'
 
-
 const app = express();
 dotenv.config();
+
 app.use(cors());
 db();
 const PORT = process.env.PORT || 4000;
 
+console.log("RESEND_API_KEY desde app.js:", process.env.RESEND_API_KEY);
 app.use(express.json())
 
 app.get("/", (req, res) => {
