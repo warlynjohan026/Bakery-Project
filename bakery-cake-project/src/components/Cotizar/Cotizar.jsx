@@ -114,7 +114,7 @@ function Cotizar() {
               <label>
                 Oferta:
                 <select
-                  className={styles.field}
+                  className={`${styles.field} ${styles.fieldSelect}`}
                   name="oferta"
                   value={formData.oferta}
                   onChange={handleChange}

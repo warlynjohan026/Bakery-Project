@@ -47,7 +47,15 @@ form {
     color: white;
     margin-top: 0.5rem; 
     padding-left: 0.625rem; 
+    
 }
+
+
+.fieldSelect option {
+  background-color: #F2A6A6; 
+  color: #000000; 
+}
+
 
 .fieldmessage {
     width: 100%;
